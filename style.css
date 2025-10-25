@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff6fb;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #fcb1d3, #b5d8ff);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  border-bottom: 3px solid #ffd6ec;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff0f8;
+}
+
+/* Menu Icon (for mobile) */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 1.2rem;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #ffe8f6;
+  color: #7755a4;
+  border-bottom: 2px dashed #fcb1d3;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+/* Cards Section */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.4);
+  padding: 1.5rem;
+  width: 28%;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(255, 182, 193, 0.6);
+}
+
+.card h3 {
+  color: #ff8cc6;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #ffd6ec;
+  color: #7755a4;
+  padding: 1rem;
+  font-weight: 500;
+  border-top: 2px dashed #fcb1d3;
+}
+
+/* 🔹 Responsive (Mobile) */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0;
+    background: linear-gradient(180deg, #fcb1d3, #b5d8ff);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255,255,255,0.3);
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 85%;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+}
+
+

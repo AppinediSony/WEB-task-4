@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <div class="menu-icon" id="menu-icon">
+        ☰
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to My Page</h2>
+    <p>Soft colors, smooth vibes, and a mobile-friendly design.</p>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <h3>✨ Aesthetic</h3>
+      <p>Enjoy a pastel-themed experience that’s easy on the eyes.</p>
+    </div>
+    <div class="card">
+      <h3>📱 Responsive</h3>
+      <p>Looks adorable on phones, tablets, and desktops.</p>
+    </div>
+    <div class="card">
+      <h3>🌈 Cheerful</h3>
+      <p>Brighten your day with smooth, playful colors and design.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>💗 &copy; 2025 My Cute Website</p>
+  </footer>
+
+  <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinks = document.getElementById('nav-links');
+
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
+
+
